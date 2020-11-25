@@ -12,6 +12,7 @@ public interface ItemRepository extends JpaRepository<Item, Long>, JpaSpecificat
 
 	@Query("select itm from com.sathyatech.app.model.Item itm inner join itm.whVendors ven where ven.whUserTypeId=?1")
 	List<Item> findItemsByVendor(Long vendorId);
+	// using test
 	 	
 
 }
